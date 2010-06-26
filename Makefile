@@ -10,7 +10,7 @@ WIPE_OBJ = wipe.o util.o xmpp.o commands.o
 all: losbot
 
 losbot: $(OBJ)
-	gcc -o losbot $(OBJ) $(LDFLAGS) $(DEBUG)  
+	gcc -o beatbot $(OBJ) $(LDFLAGS) $(DEBUG)  
 main.o: main.c
 	gcc -c main.c -o main.o $(CFLAGS) $(DEBUG) $(FUNCFLAGS)
 xmpp.o: xmpp.c
